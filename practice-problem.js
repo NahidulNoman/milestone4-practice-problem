@@ -54,11 +54,11 @@
 
 
 function bestFriend(friend){
-        let boroVai = ' '
-        for(i = 0; i < friend.length; i++){
+        let boroVai = ' ';
+        for(let i = 0; i < friend.length; i++){
             // let index = friend[i]
             if(friend[i].length > boroVai.length){
-                boroVai = friend[i]
+                boroVai = friend[i];
             }
         }
         return boroVai;
