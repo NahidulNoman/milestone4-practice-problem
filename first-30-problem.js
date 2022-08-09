@@ -138,10 +138,10 @@
 
 // 14) this array 10 times reverse way using for loop
 
-let myStudy = ['unlock1', 'video2', 'practice3', 'support4'];
-for(let i = myStudy.length; i > 0; i--){
-    console.log(myStudy[i]);
-}
+// let myStudy = ['unlock1', 'video2', 'practice3', 'support4'];
+// for(let i = myStudy.length; i > 0; i--){
+//     console.log(myStudy[i]);
+// }
 
 // 15) this array 10 times reverse way using while loop
 
