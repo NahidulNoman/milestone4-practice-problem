@@ -34,38 +34,57 @@
 // উত্তর হিসেবে সংখ্যা রিটার্ন করবে। 
 
 
+// function paperRequirements(book1,book2,book3){
+//     let firstBook = 100;
+//     let secondBook = 200;
+//     let thirdBook = 300;
 
+//     let fristBookPages = firstBook * book1;
+//     let secondBookPages = secondBook * book2;
+//     let thirdBookPages = thirdBook * book3;
 
-
-
-
+//     let totalBookPages = fristBookPages + secondBookPages + thirdBookPages;
+//     return totalBookPages
+// }
+// let booksNeeded = paperRequirements(3,2,1);
+// console.log(booksNeeded);
 
 
 // ৪. একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে। 
 
 
-// function bestFriend(friend){
-        
-// }
-// let friendName = ['lalu','kulee','fokira','joylal','syed-noman'];
-// let findName = bestFriend(friendName);
-// console.log(findName);
+function bestFriend(friend){
+        let boroVai = ' '
+        for(i = 0; i < friend.length; i++){
+            // let index = friend[i]
+            if(friend[i].length > boroVai.length){
+                boroVai = friend[i]
+            }
+        }
+        return boroVai;
+}
+let friendName = ['Lalu','Kulee','Fokira','Joylal','Syed-Noman','Syed Mohammad Noman'];
+let findName = bestFriend(friendName);
+console.log(findName);
 
 
 // ৫. এইটা একটু ট্রিকি হতে পারে। একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
 
 
-function realNumber(numbers){
-        let positiveNumber = [];
-        for(i = 0; i <numbers.length; i++){
-            let index = numbers[i];
-            if(index >= 0){
-                positiveNumber.push(index);
-                break;
-            }
-        }
-        return positiveNumber;
-}
-let numberArray = [12,32,43,17,9,-2,15,19,25];
-let getResult = realNumber(numberArray);
-console.log(getResult);
+// function realNumber(numbers){
+//         let positiveNumber = [];
+//         for(i = 0; i <numbers.length; i++){
+//             let index = i;
+//             let element = numbers[index];
+//             if(element > 0){
+//                 positiveNumber.push(element);
+//             }
+//             else{
+//                 break;
+//             }
+//         }
+//         return positiveNumber;
+// }
+// let numberArray = [12,32,43,17,9,-2,15,19,25];
+// let getResult = realNumber(numberArray);
+// console.log(getResult);
