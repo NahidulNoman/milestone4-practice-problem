@@ -1,4 +1,4 @@
-// milestone all problem try to solve this here we go ---
+// milestone4 first 30 problem try to solve this here we go ---
 
 // 1) Harry’s mom gave him tk 1000 and asked him to buy some oranges and apples. Write a program to help Harry calculate how much money the shopkeeper will return. The total cost of 1 kg of oranges and 1 kg of apples is tk 700. 
 
@@ -104,9 +104,20 @@
 
 // 11) তাড়াহুড়া করে স্কুলের জন্য বের হচ্ছ কিন্তু রাস্তা পার হওয়ার সময় দেখলে , ট্রাফিক সিগন্যাল লাল রং। এই অবস্থায় যদি তুমি রাস্তা পার হওয়ার চেষ্টা কর, তাহলে ডেঞ্জার হতে পারে । যদি হলদু রং হয় তাহলে tumar থেমে যাওয়া উচিত। আর যদি ট্রাফিক সিগন্যাল গ্রিন হয় তাহলে ত োমার রাস্তা পার হওয়া উচিত। তাই একটা ক োড লিখে ফেল ো। যেখানে আমরা signal নামে একটা ভেরিয়েবল থাকবে । সেটার মান green, yellow বা red হতে পারে ।সেই অনসুারে ডিফারেন্টডি ফারেন্ট কাজ হবে । ত ো, সে ই ক োড ফটাফট লিখে ফেল ো।
 
-// let signal1 = 'green'
-// let signal2 = 'yellow'
-// let signal3 = 'red'
+// let signal = 'orange'
+// switch(signal){
+//     case 'red':
+//         console.log('you are in danger!!')
+//         break;
+//         case 'green':
+//             console.log('you can cross the road!!')
+//             break;
+//             case 'yellow':
+//                 console.log('you stop now!!')
+//                 break;
+//                 default:
+//                     console.log('you should wait for signal')
+// }
 
 // 12) 10 times for looping this array--
 
@@ -127,10 +138,10 @@
 
 // 14) this array 10 times reverse way using for loop
 
-// let myStudy = ['unlock1', 'video2', 'practice3', 'support4'];
-// for(i = myStudy.length; i > 0; i--){
-//     console.log(myStudy)
-// }
+let myStudy = ['unlock1', 'video2', 'practice3', 'support4'];
+for(let i = myStudy.length; i > 0; i--){
+    console.log(myStudy[i]);
+}
 
 // 15) this array 10 times reverse way using while loop
 
