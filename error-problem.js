@@ -9,11 +9,28 @@
 
 
 
-// Suppose, you have an array with 8 elements. Find the smallest element of that array.Now for the previous array, try to find the second largest element.
+// Suppose, you have an array with 8 elements. Find the smallest element of that array.
+// Now for the previous array, try to find the second largest element.
 
-
-
-
+// function lowNumber(numbers){
+//     let lowest = numbers[0];
+//     let seclowest = numbers[1];
+// for(let i = 0; i < numbers.length; i++){
+//     let  element = numbers[i];
+//     if(element < lowest){
+//         seclowest = lowest
+//         lowest = element;
+        
+//     }  
+//     else if(element < seclowest){
+//         seclowest = element
+//     }
+// }
+// return seclowest  ;
+// }
+// let thisArray = [11, 33, 54, 20, 7, 13,56, 34];
+// let getLowerNumber = lowNumber(thisArray);
+// console.log(getLowerNumber);
 
 
 // this array 10 times reverse way using for loop
@@ -27,4 +44,22 @@
 
 
 
+function countVowel(letter){
+    let vowelCount = [];
+    let thoseVowel = ['a','e','i','o','u'];
+    for(i = 0; i < letter.length; i++){
+        let vowel = letter[i];
+        if(thoseVowel.indexOf(vowel) !== -1){
+         vowelCount.push(vowel);
+        }
+    }return vowelCount;
+}
 
+// function countVowel(letter){
+//     let count = letter.match(/[aeiou]/gi);
+//     return count;
+// }
+
+let thisVowel = 'javascript';
+let getVowel = countVowel(thisVowel);
+console.log(getVowel);
