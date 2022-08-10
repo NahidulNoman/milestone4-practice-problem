@@ -270,11 +270,14 @@
 // function odd_even(number){
 //     let valueNumber = number % 2;
 //     if(valueNumber == 0){
-//         return true
+//         return true;
 //     } 
+//     else {
+//         return false;
+//     }
 // }
-// let oddEvenNumber = 50;
-// let getResult = console.log(oddEvenNumber);
+// let oddEvenNumber = 59;
+// let getResult = odd_even(oddEvenNumber);
 // console.log(getResult);
 
 
